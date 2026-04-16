@@ -1,0 +1,19 @@
+# Dependencias (NUNCA subir esta carpeta)
+node_modules/
+
+# Logs de error de npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Carpetas de compilación de Electron (si usas electron-builder o forge)
+dist/
+out/
+
+# Archivos del sistema y editores
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Variables de entorno (donde guardarás contraseñas de bases de datos)
+.env

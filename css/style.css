@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+header { height: 10%; background: #222; color: white; padding: 10px; }
+.visual-container { flex: 1; display: flex; justify-content: center; align-items: center; }
+footer { height: 15%; background: #eee; display: flex; align-items: center; padding: 10px; }
+
+img { max-height: 80%; border-radius: 8px; }
