@@ -1,0 +1,55 @@
+/* #header-container {
+
+} */
+
+.header-content{
+    width: 100%;
+    height: 100%;
+}
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color: #110954;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    }
+
+.Imagen1, .Imagen2 {
+        width: 110px;
+        height: 60px;
+        border-radius: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #bfc5cc;
+        font-weight: bold;
+        background-color: white;
+        overflow: hidden;
+    }
+
+.Imagen1 img, .Imagen2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Fecha {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.Hora {
+    font-size: 1.2rem;
+    text-align: center;
+}

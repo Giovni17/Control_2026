@@ -1,12 +1,24 @@
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+/* 1. RESET Y ESTRUCTURA BASE */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header { height: 10%; background: #222; color: white; padding: 10px; }
-.visual-container { flex: 1; display: flex; justify-content: center; align-items: center; }
-footer { height: 15%; background: #eee; display: flex; align-items: center; padding: 10px; }
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #000028;
+}
 
-img { max-height: 80%; border-radius: 8px; }
+.grid-container {
+    display: grid;
+    grid-template-rows: 12% 50% 38%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
