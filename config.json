@@ -1,62 +1,120 @@
 {
-  "versiones":{
-    "1.0.0":{
-    "empresa_propietaria": "Constructora Raber",
-    "empresa_desarrolladora": "Constructora Raber",
-    "empresa_aliada": "Constructora Raber",
-    "header":{
-      "imagen1": "./static/imagenes/raber.png",
-      "titulo": "Aeropuerto Internacional morelia",
-      "imagen2": "./static/imagenes/raber.png"
+  "versiones": {
+    "1.0.0": {
+      "empresa_propietaria": "Constructora Raber",
+      "empresa_desarrolladora": "Constructora Raber",
+      "empresa_aliada": "Constructora Raber",
+      "header": {
+        "imagen1": "./static/imagenes/raber.png",
+        "titulo": "Aeropuerto Internacional ",
+        "imagen2": "./static/imagenes/raber.png"
+      },
+      "cuerpo": {
+        "distribucion": {
+          "columnas": 2,
+          "filas": 1,
+          "elementos": [
+            {
+              "id": "cuerpo1",
+              "columna": 1,
+              "tcolumna": "100%",
+              "fila": 1,
+              "tfila": "100%",
+              "config": {
+                "mapa": true,
+                "alarmas": false,
+                "datoscds": false,
+                "lamparas": false
+              }
+            },
+            {
+              "id": "cuerpo2",
+              "columna": 2,
+              "tcolumna": "100%",
+              "fila": 1,
+              "tfila": "100%",
+              "config": {
+                "mapa": false,
+                "alarmas": true,
+                "datoscds": false,
+                "lamparas": false
+              }
+            }
+          ]
+        }
+      },
+"control": {
+        "controles": [
+          {
+            "grupo_sistema":1,
+            "nombre_grupo": "papis",
+            "tipo_control": "plc",
+            "numero_grupo": 1,
+            "cabecera": ["23", "05"]
+          },
+          {
+            "grupo_sistema":2,
+            "nombre_grupo": "Borde de pista",
+            "tipo_control": "master",
+            "numero_grupo": 1,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":3,
+            "nombre_grupo": "Eje de calle",
+            "tipo_control": "master",
+            "numero_grupo": 2,
+            "cabecera": ["10"]
+          },
+          {
+            "grupo_sistema":4,
+            "nombre_grupo": "letrero",
+            "tipo_control": "master",
+            "numero_grupo": 3,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":5,
+            "nombre_grupo": "rodajes",
+            "tipo_control": "master",
+            "numero_grupo": 4,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":6,
+            "nombre_grupo": "pista",
+            "tipo_control": "master",
+            "numero_grupo": 5,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":7,
+            "nombre_grupo": "grupo",
+            "tipo_control": "master",
+            "numero_grupo": 6,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":8,
+            "nombre_grupo": "rgtfd",
+            "tipo_control": "master",
+            "numero_grupo": 7,
+            "cabecera": []
+          }
+
+        ]
+      },
+      "logica": {}
     },
-    "cuerpo": {
-      "distribucion":{
-      "columnas": 2,
-      "filas": 1,
-      "cuerpo1":{
-        "columna": 1,
-        "fila": 1,
-        "mapa":true,
-        "alarmas":false,
-        "datoscds":false,
-        "lamparas":false
-      },
-      "cuerpo2":{
-        "columna": 2,
-        "fila": 1,
-        "mapa": false,
-        "alarmas": true,
-        "datoscds": false,
-        "lamparas": false
-      }
-    }
-  },
-    "control": {
-      "dashboardTitle": "Panel de Control",
-      "userManagement": "Gestión de Usuarios",
-      "flightSchedules": "Horarios de Vuelos",
-      "securitySettings": "Configuración de Seguridad",
-      "logoutButton": "Cerrar sesión"
-    },
-    "logica":{}
-  },
-    "2.0.0":{
-      "header":{
-
-      },
-      "cuerpo":{
-
-      },
-      "control":{
-
-      },
-      "logica":{
-      "alarmas":{
-        "correo": "alarmas@aeropuerto.com"
-      }
+    "2.0.0": {
+      "header": {},
+      "cuerpo": {},
+      "control": {},
+      "logica": {
+        "alarmas": {
+          "correo": "alarmas@aeropuerto.com"
+        }
       }
     }
   }
 }
-  
-
