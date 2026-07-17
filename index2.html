@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Control - Pantalla 1</title>
-    <!-- El CSS base se carga aquí, el de control se inyecta por JS -->
+    <title>Sistema de Control - Pantalla 2</title>
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
     <div class="grid-container">
-        <!-- Contenedor para Título, Logos y Reloj -->
+        <!-- El header será el mismo (AICM) pero las imágenes redirigirán según el JSON -->
         <div id="header-container"></div>
         
-        <!-- Contenedor opcional para otros datos -->
         <div id="cuerpo-container"></div>
         
-        <!-- Contenedor donde se dibujarán las LÁMPARAS (Grupo 1) -->
+        <!-- Contenedor donde se dibujará el GRUPO DE PRUEBA (Grupo 2) -->
         <div id="control-container"></div>
     </div>
 
-    <!-- Cargador principal que coordina loadHeader y loadControl -->
+    <!-- Usamos el mismo cargador; él sabe en qué página está parado -->
     <script src="render/config-loader.js"></script>
 </body>
 </html>

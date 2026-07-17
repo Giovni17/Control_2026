@@ -4,10 +4,14 @@
       "empresa_propietaria": "Constructora Raber",
       "empresa_desarrolladora": "Constructora Raber",
       "empresa_aliada": "Constructora Raber",
+      "ip_servidor": "10.10.2.111",
+      "puerto_servidor": 8085,
       "header": {
         "imagen1": "./static/imagenes/raber.png",
-        "titulo": "Aeropuerto Internacional ",
-        "imagen2": "./static/imagenes/raber.png"
+        "url1": "index.html",
+        "titulo": "Aeropuerto Internacional  de la Ciudad de México",
+        "imagen2": "./static/imagenes/raber.png",
+        "url2": "index2.html"
       },
       "cuerpo": {
         "distribucion": {
@@ -43,67 +47,131 @@
           ]
         }
       },
-"control": {
-        "controles": [
+"control": [
+         [
           {
             "grupo_sistema":1,
-            "nombre_grupo": "papis",
-            "tipo_control": "plc",
-            "numero_grupo": 1,
+            "nombre_grupo": "Aprox-Elevada",
+            "tipo_control": "master",
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 1,
             "cabecera": ["23", "05"]
           },
           {
             "grupo_sistema":2,
             "nombre_grupo": "Borde de pista",
             "tipo_control": "master",
-            "numero_grupo": 1,
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 2,
             "cabecera": []
           },
           {
             "grupo_sistema":3,
-            "nombre_grupo": "Eje de calle",
+            "nombre_grupo": "Rodajes 1",
             "tipo_control": "master",
-            "numero_grupo": 2,
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 3,
             "cabecera": ["10"]
           },
           {
             "grupo_sistema":4,
-            "nombre_grupo": "letrero",
+            "nombre_grupo": "Rodajes 2",
             "tipo_control": "master",
-            "numero_grupo": 3,
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 4,
             "cabecera": []
           },
           {
             "grupo_sistema":5,
-            "nombre_grupo": "rodajes",
+            "nombre_grupo": "Eje pista 1A",
             "tipo_control": "master",
-            "numero_grupo": 4,
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 5,
             "cabecera": []
           },
           {
             "grupo_sistema":6,
-            "nombre_grupo": "pista",
+            "nombre_grupo": "Eje pista 1B",
             "tipo_control": "master",
-            "numero_grupo": 5,
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 6,
             "cabecera": []
           },
           {
             "grupo_sistema":7,
-            "nombre_grupo": "grupo",
+            "nombre_grupo": "Eje pista 2A",
             "tipo_control": "master",
-            "numero_grupo": 6,
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 7,
             "cabecera": []
           },
           {
-            "grupo_sistema":8,
-            "nombre_grupo": "rgtfd",
+            "grupo_sistema":7,
+            "nombre_grupo": "Eje pista 2A",
             "tipo_control": "master",
-            "numero_grupo": 7,
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 7,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":7,
+            "nombre_grupo": "Eje pista 2A",
+            "tipo_control": "master",
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 7,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":7,
+            "nombre_grupo": "Eje pista 2A",
+            "tipo_control": "master",
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 7,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":7,
+            "nombre_grupo": "Eje pista 2A",
+            "tipo_control": "master",
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 7,
+            "cabecera": []
+          },
+          {
+            "grupo_sistema":7,
+            "nombre_grupo": "Eje pista 2A",
+            "tipo_control": "master",
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 7,
             "cabecera": []
           }
-
+      
+        ],
+        [
+          {
+            "grupo_sistema":13,
+            "nombre_grupo": "Grupo de prueba",
+            "tipo_control": "master",
+            "nombre_master": "MASTER1",
+            "tipo": "LAMPARA",
+            "params": 13,
+            "cabecera": []
+          }
         ]
-      },
+      ],
+      
       "logica": {}
     },
     "2.0.0": {

@@ -21,10 +21,22 @@ async function initApp() {
         versiones.forEach(v => {
             const contenido = data.versiones[v];
             
-            // Cada función ahora se encarga de su propio HTML, CSS y Datos
+            // SOLO actualizamos la IP global si la versión actual la contiene
+            if (contenido.ip_servidor) {
+                window.IpServer = contenido.ip_servidor;
+                window.PuertoServer = contenido.puerto_servidor;
+                console.log(`🌐 IP actualizada por v${v}: ${window.IpServer}`);
+                console.log(`🌐 Puerto actualizado por v${v}: ${window.PuertoServer}`);
+            }
+
             loadHeader(contenido, v);
             loadCuerpo(contenido, v);
-            loadControl(contenido, v);
+            
+            // Solo cargamos control si la versión tiene esa sección definida
+            if (contenido.control) {
+                loadControl(contenido, v);
+            }
+            
             procesarLogica(contenido, v);
         });
 
